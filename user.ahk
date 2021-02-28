@@ -27,6 +27,9 @@ goto end_of_file
 ; end of TC mappings
 
 ; --- global mappings, will work everywhere
+; Map Capslock as Escape
+Capslock::Esc
+
 ; Open GVim with window maximized
 #v::
 DetectHiddenWindows, on
@@ -35,8 +38,6 @@ IfWinNotExist ahk_class Vim
 Else
 IfWinNotActive ahk_class Vim
     WinActivate
-Else
-    WinMinimize
 Return
 
 ; Open Everything with window maximized
@@ -47,8 +48,6 @@ IfWinNotExist ahk_class EVERYTHING
 Else
 IfWinNotActive ahk_class EVERYTHING
     WinActivate
-Else
-    WinMinimize
 Return
 
 ; don't put anything below end_of_file line,
