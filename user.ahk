@@ -34,7 +34,7 @@ Capslock::Esc
 #v::
 DetectHiddenWindows, on
 IfWinNotExist ahk_class Vim
-    Run, c:\Program Files\Vim\Vim82\gvim.exe,,max
+    Run, c:\Program Files\Vim\Vim82\gvim.exe
 Else
 IfWinNotActive ahk_class Vim
     WinActivate
@@ -44,7 +44,7 @@ Return
 #f::
 DetectHiddenWindows, on
 IfWinNotExist ahk_class EVERYTHING
-    Run, c:\Program Files\Everything\Everything.exe,,max
+    Run, c:\Program Files\Everything\Everything.exe
 Else
 IfWinNotActive ahk_class EVERYTHING
     WinActivate
