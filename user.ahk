@@ -27,8 +27,6 @@ goto end_of_file
 ; end of TC mappings
 
 ; --- global mappings, will work everywhere
-; Map Capslock as Escape
-Capslock::Esc
 
 ; Open GVim with window maximized
 #v::
